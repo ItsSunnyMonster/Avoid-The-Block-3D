@@ -23,7 +23,7 @@ public class CollisionDetector : MonoBehaviour
         if (collision.collider.CompareTag("Obstacle"))
         {
             playerMovement.enabled = false;
-            Invoke(nameof(GameOver), reactionTime);
+            // Invoke(nameof(GameOver), reactionTime);
         }
     }
 
@@ -31,10 +31,10 @@ public class CollisionDetector : MonoBehaviour
 
     #region METHODS
 
-    private void GameOver()
-    {
-        SceneManager.LoadScene("Game Over");
-    }
+    // private void GameOver()
+    // {
+    //     SceneManager.LoadScene("Game Over");
+    // }
 
     #endregion
 }
