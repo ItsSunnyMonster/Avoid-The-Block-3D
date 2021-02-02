@@ -5,6 +5,7 @@
 
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class FPS_Calculator : MonoBehaviour
 {
@@ -16,20 +17,27 @@ public class FPS_Calculator : MonoBehaviour
 
     #region UNITY CALLBACK METHODS
 
-    private void Update()
+    private void Start()
     {
-        UpdateFPS();
+        StartCoroutine(nameof(UpdateFPS));
     }
 
     #endregion
 
     #region METHODS
 
-    private void UpdateFPS()
+    private IEnumerator UpdateFPS()
     {
-        var fps = 1f / Time.deltaTime;
+        float fps;
 
-        fpsText.SetText("     " + Mathf.Floor(fps).ToString() + " FPS");
+        while (true)
+        {
+            fps = 1f / Time.deltaTime;
+
+            fpsText.SetText("     " + Mathf.Floor(fps).ToString() + " FPS");
+
+            yield return new WaitForSeconds(Random.Range(0.1f, 2f));
+        }
     }
 
     #endregion

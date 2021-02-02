@@ -172,7 +172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_text
-      value: '     Alpha 1.0a'
+      value: '     Alpha 1.1'
       objectReference: {fileID: 0}
     - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_fontSize
