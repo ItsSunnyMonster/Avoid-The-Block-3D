@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 {
     #region FIELDS
 
-    
+
 
     #endregion
 

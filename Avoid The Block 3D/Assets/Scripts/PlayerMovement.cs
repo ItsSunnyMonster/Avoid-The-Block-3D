@@ -7,12 +7,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	#region FIELDS
+    #region FIELDS
 
     public Rigidbody playerRb;
     public Transform cameraTransform;
     public Vector3 cameraOffset;
-    
+
     public float speed = 1000f;
     public float horizontalSpeed = 100f;
 
@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     #region METHODS
 
-    
+
 
     #endregion
 }

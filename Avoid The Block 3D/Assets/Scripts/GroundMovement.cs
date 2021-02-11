@@ -7,27 +7,27 @@ using UnityEngine;
 
 public class GroundMovement : MonoBehaviour
 {
-	#region FIELDS
+    #region FIELDS
 
-	public Transform groundTransform;
+    public Transform groundTransform;
 
-   	#endregion
+    #endregion
 
-   	#region UNITY CALLBACK METHODS
+    #region UNITY CALLBACK METHODS
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (other.CompareTag("Player"))
-		{
-			groundTransform.Translate(Vector3.forward * 2000);
-		}
-	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            groundTransform.Translate(Vector3.forward * 2000);
+        }
+    }
 
-	#endregion
+    #endregion
 
-   	#region METHODS
+    #region METHODS
 
 
 
-   	#endregion
+    #endregion
 }
