@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 48060345}
   - component: {fileID: 48060344}
   m_Layer: 5
-  m_Name: Restart Button
+  m_Name: Play Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_text
-      value: Restart
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_fontSize
@@ -854,7 +854,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_text
-      value: Back to Menu
+      value: Quit
       objectReference: {fileID: 0}
     - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_fontSize
@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 1814885181}
   - component: {fileID: 1814885180}
   m_Layer: 5
-  m_Name: Back To Menu Button
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,7 +1049,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 944729141}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: BackToMenu
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1104,6 +1104,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 142076482}
     m_Modifications:
+    - target: {fileID: 206161208310109973, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
+      propertyPath: m_text
+      value: Welcome!
+      objectReference: {fileID: 0}
     - target: {fileID: 206161208310109974, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1190,7 +1194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206161208310109975, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}
       propertyPath: m_Name
-      value: Game Over Text
+      value: Welcome
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c041e2b75391b94e9514b47c6a454cb, type: 3}

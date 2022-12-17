@@ -29,6 +29,22 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
+    public void Quit()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #elif UNITY_WEBPLAYER
+        Application.OpenURL("https://google.com");
+        #else
+        Application.Quit();
+        #endif
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     #endregion
 
     #endregion
